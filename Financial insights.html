@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Financial insights</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- Google font link -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+ 	<div class="navtop">
+ 		<!-- img src="images/Sara.png" height="80" alt="my logo" align="left"> -->
+ 		<a href= "https://sara.azari.com" class="pink" alt="about">about</a>
+ 		<a href="https://" class="pink" alt="work">work</a>
+ 		<a href="https://" class="pink" alt="resume">resume</a>
+ 	</div>  
+
+ 	<div class="landing">
+ 		<h1>Financial insights</h1>
+ 		<img src="images/Resposive Presentation 2.png" alt="Responsive" width="90%" class="center">
+ 		<p>
+			Financial insights is a part of PointClickCare Insights suite. It brings real time visibility into how a Senior Nursing Facility (SNF) is performing in terms of PDPM (Patient Driven Payment Model) revenue. This analytics tool provides performance information at mutiple levels, including organizational, facility, and resident level. Using Financial insights helps facility administrators plan and budget for their facilities, track revenue and expending, and improve facility's performance. I worked on designing the UX and UI of this project with Bruce Ashtiani, Sr. UX desinger at PointClickCare.
+ 		</p>
+ 	</div>
+ 		<h2>Why</h2>
+ 		<h3>Problem definition and use case</h3>
+ 		<p>
+			CMS (Centers for Medicare and Medicaid Services) introduced PDPM and Senior nursing facilities needed to make changes to their financial management routines and adapt.
+			PDPM revolutionized how SNFs operate by changing the way SNFs get paid and ensuring coordinated, quality care becomes a reality. <br>
+			These upcoming changes concerned Pointclickcare customers, and the product team spotted the need to provide the customers with a dashboard-like solution that could give SNF administrators quick and ready to consume real-time insights on how their facilities are doing.
+		</p>
+ 		<h2>Who</h2>
+ 		<p>
+ 			Target persona for Financial Insights is Adam, the Administrator.
+ 		</p>
+ 		<img src="Financial exports/Adam the Administrator.png" alt="Administrator Persona" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+ 		<br>
+ 		<h2>The process</h2>
+ 		<h3>User research</h3>
+ 		<p>
+ 			We conducted bi-weekly remote user feedback sessions over zoom with 4 customers. We practiced think-aloud method, and asked users to go through workflows, while they express all their reactions, and give us feedback at the end of session. We conducted SUS after testing each work flow, for which the average results were above 90.<br>
+ 			Some of the learnings include
+ 			<ul>
+ 				<li>Observing how users perform similar tasks currently </li>
+				<li>KPIs based on which administrators make decisions. This was crucial to draw decisions on what to include as dashboard content to bring the most values and insights to the users. </li>
+				<li>How users expect to interact with data visualizations, and whether or not initially designed micro-interactions were discoverable and useful.</li> 
+				<li>Narrowing down and prioritizing the number of KPIs that we included on the “overview page” of the application. This is important because we aimed for this page to give users the most valuable insight, in the shortest amount of time possible</li>
+				<li>We learned that users' mental model was more aligned with looking at the bigger picture first, and drilling down to get more detailed info about performance insights.</li>
+			</ul>
+		</p>
+		<br>
+		<h3>Whiteboarding, wireframes and lo-fi prototypes</h3>
+		<p>Starting with pen&paper and whiteboard, we drew all the ideas we had based on the results of user research.</p>
+		<img src="Financial exports/whiteboard.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+		<br>
+		<img src="Financial exports/whiteboard 2.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+
+ 		<h3>Challenges</h3>
+ 		<ul>
+ 			<li>PDPM was a new concept to everyone, and users naturally did not use this product before. This means all the user research prior to release had to be done with users that had no idea what they were expecting from this product. Fortunately, ustomers were excited that an analytics product was on its way to help them make decisions fast and easy, and without having to look at multiple excel pages and studying numbers; So they passionately and patiently discussed all possibilities and their expectations with us.</li>
+ 			<li>Different health care organizations have different systems set up for finance management.</li>
+ 			<li>Information architecture of this project was complicated because due to the nature of the data and user workflows, some of the navigational elements had to depend of microinteractions (E.g. table rows raising on hover, indicating that they're clickable). User testing showed these microinteractions were easily discoverable by target persona.</li>
+ 			<li>Density of information on each chart gave us only three options; We either needed to accept that there is no neat way of showing the information on one chart, not show all the information, or come up a way to show all the information neatly. We introduced new concepts for visualizations that align with visualization guidelines, and allow for more information density.</li>
+ 			<li>Financial insights was the first product to be designed and implemented based on PointClickCare design system, Evergreen. This means we updated Evergreen and its guidelines simultaneously. It also means every single component or visualization we used in our designs needed to be made by the development teams and added to the components library.</li>
+ 		</ul>
+
+
+ 		<h2>The solution</h2> 	
+		<p>
+			After countlesss hours of ideation, numourus iterations on mockups, hours of customer calls, days of discussion between designers, product teams, and developers, we had a final product. Here are a few mockups:
+		</p>
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background: #aa00ff;">
+  			<!--<ol class="carousel-indicators">
+    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  			</ol>-->
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Overview.png" alt="First slide">
+      				<!--<div class="carousel-caption d-none d-md-block">
+    					<h5>...</h5>
+    					<p>...</p>
+  						</div> -->
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 1.png" alt="Second slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 2.png" alt="Third slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 3.png" alt="Fourth slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 4.png" alt="5th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 5.png" alt="6th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 6.png" alt="7th" slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 7.png" alt="8th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 8.png" alt="9th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/v3.png" alt="10th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 1.png" alt="11th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 2.png" alt="12th slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 3.png" alt="13 slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 4.png" alt="14 slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/Initial.png" alt="15 slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/PC.png" alt="16 slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/pt.png" alt="17 slide">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="Financial exports/Slideshow/slp.png" alt="18 slide">
+    			</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+   				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+   				<span class="sr-only">Next</span>
+  			</a>
+		</div>
+
+		<p>
+			Customers are exceptionally satisfied with Financial insights product. In the future financial inisghts will be a part of a bigger insights platform that will include more perfomance analytics products.
+		</p>
+		
+ 		<h2>Learnings</h2>
+ 		<p>
+ 			My biggest take away is the magic that happens when all teams collaborate to make the best possible outcome happen, trust each other, and keep communications going.
+ 			If I could improve anything I would do post-release user testings to observe how users are using the product now that it has been available to them for a couple of months. I'm sure we can get some insights from users and make more improvements to the product.
+ 		</p>
+
+
+ 	<div class="footer">
+ 		<div class="navIcons">
+ 			<a href= "https://sara.azari.com" class="pink link" alt="about">about</a>
+ 			<a href="https://" class="pink link" alt="work">work</a>
+ 			<a href="https://" class="pink link" alt="resume">resume</a>
+ 		</div>  
+ 		<a href="https://dribbble.com/sara_azari"><h4 class="pink">More on Dribble</h4></a>
+ 		<div class="underlineSmall"></div>
+ 	</div>
+
+</body>
+</html>
