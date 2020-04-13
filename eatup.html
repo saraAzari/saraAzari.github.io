@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EATUP</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- Font awesome link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Google font link -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!--css-->
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<!-- faveicon -->
+ 	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+	<div class="navtop" id="myTopnav">
+ 		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
+ 		<a href= "index.html" class="pink" alt="about" style="text-align: right;" >about</a>
+ 		<a href="index.html#work" class="pink active" alt="work" style="text-align: right;">work</a>
+ 		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
+ 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+ 	</div>  
+
+ 	<div class="landing">
+ 		<div class="landingWrapper">
+ 			<div class="landingL">
+ 				<h1>EATUP</h1>
+ 				<p>In October 2018, I had the chance to attend my first hackathon, Elle Hacks.<br>I teamed up with three other ladies that were attending, and we all agreed we wanted to participate in the  “TD Green Challenge”. We sat down and discussed what kinds of meanings can “green” suggest. We decided helping build a “smart city”, protecting the nature, and helping out to make our society healthier and happier were some subjects we are passionate about.</p>
+ 			</div>
+ 			<div class="landingR">
+ 				<img src="images/Project_01.png" alt="Eatup logo" width="300px;" style="margin-top: 30px" >
+ 			</div>
+ 		</div>
+ 		<!--<img src="images/Scroll.png" alt="scroll down" class="scroll">-->
+ 	</div>
+
+ 	<div>
+ 		<h2>About EATUP</h2>
+ 		<p>EATUP is a tool of communication between consumers and food donors. EATUP serves as a platform to let individuals and companies protect our environment by reducing the amount of wasted food and also support the health care of those who that are going through hardship by providing them with healthy nutritions.<br><br></p>
+ 		<h3>Prerequisites</h3><p>This web application runs on any web browser.<br>This prototype was made using HTML, CSS, JAVASCRIPT, and Bootstrap.<br><br>
+ 		<h3>Group Members</h3><p> Sara Azari <br> Chloe Ierullo <br> Maria Poveda <br> Tina Abbasi</p><br><br>
+ 		
+ 		<h3>The problem</h3><p> We live in a society where while there are people who sleep hungry, restaurants throw their excess ingredients out every night! We want to create a way to connect those who in need to the available resources for consumption. </p>
+ 		<br><br>
+ 		<h3>Personas</h3><p>
+ 			<ul>
+ 				<li><p>1. Fatima, 42, recent Syrian refugee that lost her husband, and needs to feed her 5 year old son, she has been hustling for a job, but has not had luck yet. <br>In general, People who are through some difficult times, and cannot afford to provide food and nutritions for themselves.</p></li>
+ 				<li><p>2. Scott, a 21 year old University student that works at Starbucks to help cover his living costs.<br>In general, Owners/workers of restaurants and food places</p></li>
+ 			</ul>
+ 		<br><br>
+ 		<h3>The Solution</h3><p>The homeless needs food, the food places have extra food; The only thing we need to solve is figuring out a way for this food to make its way where it belongs!</p><br><p>Since this was a UX design process and we wanted our product to be user-centered, I took the lead of doing some research to learn more about our personas. Some of the design problems we faced are:</p>
+ 		<ul style="list-style-type:disc; color: #bbbbbb">
+ 			<li><p>I happen to have a friend that used to volunteer for a food bank in Toronto a couple of years ago, so I called him and had an informal interview with him. He explained food banks do not have enough human resources and volunteers that can pick up the food and deliver the food to the food shelters, and/or the homeless/in need consumers can not pick the food up.</p></li>
+ 			<li><p>According to the common ground of franchised restaurants, they cannot simply donate the food they did not sell. It is against their marketing strategies. At the end of the day, they are all businesses that are trying to make profit.</p></li>
+ 			<li><p>There will be individuals who try to misuse this situation and try to collect these resources, though they can afford to buy food.</p></li>
+ 			<li><p>The EATUP box that we like to use to store food may suggest possible opportunities for inappropriate uses such as exchanging illegal material such as drugs or guns, or be used as a temporary storage spot.</p></li>
+ 		</ul>
+ 		<br><br>
+ 		<h3>Possible solutions</h3>
+ 		<ul style="list-style-type:disc; color: #bbbbbb">
+ 			<li><p>Maybe if no one has to deliver the food, and the consumer can just go to a pick up location and pick the food up, there is no need to worry about the delivery process. We thought of having designated boxes at every participating restaurant.</p></li>
+ 			<li><p>Unfortunately we do not have the technical knowledge and expertise to suggest a solution to companies refusing to participate due to their marketing strategies or/and legal restrictions. This is one of the aspects of the project that needs more research and development on, which was not doable with the time constraints at the hackethon.</p></li>
+ 			<li><p>The tablets that let the user get access to the food are only available at homeless shelters.</p></li>
+ 			<li><p>To address the issue of safety and security of the designated EATUP boxes, we design the boxes to have a 4 digit code that opens the box only once, and the token can only be generated once after the employee inserts the food in the box. So the box will be opened only once and by someone who is looking for food!</p></li>
+ 		</ul>
+ 		<br><br>
+ 		<h2>USE CASE SCENARIO</h2>
+ 		<h3>Companies side of the story</h3>
+ 		<p>Scott (worker at a participating food place) after closing the place and having gathered up the leftovers, is ready to leave for the night. He may now use the web application</p>
+ 		<h4>Step 1</h4>
+ 		<p>Scott will load the website.<br>Then he will click on the “companies” button.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/1..png" alt="eatup 1" width="700px" style="border-radius: 25px;">
+ 		</div>
+  		<h4>Step 2</h4>
+ 		<p>The sign in page will come up.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/2.png" alt="eatup 2" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 3</h4>
+ 		<p>Scott can fill out a table containing all the available food and its amount that they have. The app has a pre-made menu of all items there might be available for any participating food place.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/3.png" alt="eatup 3" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 4</h4>
+ 		<p>This scenario assumes that they have 2 sandwiches and 1 salad to donate tonight! Oh! And 7 muffins.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/4.png" alt="eatup 4" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 5</h4>
+ 		<p>The confirmation page will pop up, and now all Scott has to do is to drop these foods at the EATUP box outside his store. Employees have a specific code that opens the box for them. Scott should also throw out any left overs remaining in their EATUP box since the night before.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/5.png" alt="eatup 5" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<br>
+ 		<h3>Consumers side of the story</h3>
+ 		<p>Supporting people in need and realizing they may not own or have easy access to electronic devices and an internet connection, we thought the EATUP system should provide the means for them to access the system, so we thought we would insert tablets inside a few major homeless shelters. Considering the problem of accessing the web application is solved, this is the scenario that we expect to happen:</p>
+ 		<h4>Step 1</h4>
+ 		<p>Fatima (the user) will load the website.<br>She will then click on the “consumers” button.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/1..png" alt="eatup 1" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 2</h4>
+ 		<p>Fatima will use the interactive map to find the nearest available food to her.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/6.png" alt="eatup 6" width="700px" style="border: 3px solid #bbbbbb; border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 3</h4>
+ 		<p>Next, the EATUP web application will show all the nearby available choices to Fatima.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/7.png" alt="eatup 7" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<p>Fatima can use the “Dietary Restrictions” menu and choose to only see any of Vegetarian, Halal, or Kosher options.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/8.png" alt="eatup 8" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/9.png" alt="eatup 9" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/10.png" alt="eatup 10" width="700px" style="border-radius: 25px;">
+ 		</div>
+
+ 		<h4>Step 4</h4>
+ 		<p>Fatima can now look through the options and pick something appealing to her, and her son! She is interested in what is available at starbucks.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/11.png" alt="eatup 11" width="700px" style="border-radius: 25px;">
+ 		</div>
+ 		<h4>Step 5</h4>
+ 		<p>After Fatima chooses which food place she would like to pick up food from, now all she needs to do is to get a one time random generated code for the EATUP box outside the Starbucks location she picked. All boxes have a digit-based lock that can be opened one time after the employee places the food there at night.</p>
+ 		<br>
+ 		<div class="images">
+ 			<img src="eatuppic/12.png" alt="eatup 12" width="700px" style="border-radius: 25px;">
+ 		</div>
+
+ 		<h3> Acknowledgements</h3><p> This product is inspired by TD GREEN challenge.<br>This project's code and files live <a class="pink" href="https://github.com/ChloeIerullo/ellehacks">here</a>.</p> <br><br>
+
+ </div>
+ 	<br><br>
+ 	<div class="footer">
+ 		<div>
+ 			<a href= "index.html" class="pink link" alt="about">about</a>
+ 			<a href="index.html#work" class="pink link" alt="work">work</a>
+ 			<a href="resume.html" class="pink link" alt="resume">resume</a>
+ 		</div>  
+ 		<a href="mailto:sara.razari@gmail.com"><h4 class="pink">Contact me</h4></a>
+ 		<div class="underlineSmall"></div>
+ 	</div>
+
+ 	<script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+						  <title>EatUp</title>
+
+			<meta charset="utf-8">
+			  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			  
+			  <link rel="stylesheet" type="text/css" href="eatup.css">
+
+
+</head>
+
+
+		<body>
+			<div class="fixed">
+				<div class="right">
+					<img src="email.png" alt="email" width="47" height="47">
+					<img src="phone.png" alt="email" width="47" height="47">
+				</div>
+			</div>
+			
+			<div class="left">
+				<img src="logo.png" alt="logo" width="160" height="160">
+			</div>
+			
+			
+			
+		<div  class="floating-box">
+			<h3>Food Near You</h3>
+			<div class ="buttons">
+				<button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal">Starbucks</button>
+				<br></br>
+				<button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal2">Freshii</button>
+				<br></br>
+				<button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal3">Jack Astors</button>
+				
+				
+				<div class="move">
+				  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+				    Dietary Restrictions
+				  </button>
+				  <div class="dropdown-menu">
+				    <a href = "halal.html" class="dropdown-item" href="#">Halal</a>
+				    <a href = "vegetarian.html" class="dropdown-item" href="#">Vegetarian</a>
+					<a href = "kosher.html" class="dropdown-item" href="#">Kosher</a>
+				  </div>
+				</div>
+			
+			  
+			    </div>
+			</div>
+		</div>
+		
+			<div id="map"></div>
+
+		
+			
+			<div class="popUp">
+			<div class="modal fade" id="myModal" role="dialog">
+			    <div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">
+					        <div class="modal-header">
+								<h4 class="modal-title">Starbucks</h4>
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        </div>
+					        <div class="modal-body">
+							  <ul style="list-style-type:circle" ><font size="4">
+							    <li>10 Sandwhichs</li>
+							    <li>5 Croissants</li>
+							    <li>3 Muffins</li>
+								<li>7 Yogurt</li>
+							  </ul>
+							  <div class="centerCompany">
+							  <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">GET CODE</button>
+							    <div id="demo" class="collapse">
+								3851
+							</div></font>
+							</div>
+					        </div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			<div class="popUp">
+			<div class="modal fade" id="myModal2" role="dialog">
+			    <div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">
+					        <div class="modal-header">
+								<h4 class="modal-title">Freshii</h4>
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        </div>
+					        <div class="modal-body">
+							  <ul style="list-style-type:circle"><font size="4">
+							    <li>6 Salads</li>
+							    <li>4 Soups</li>
+							    <li>2 Burritos</li>
+							  </ul>
+  							  <div class="centerCompany">
+  							  <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo1">GET CODE</button>
+  							    <div id="demo1" class="collapse">
+  								4537
+  							</font></div>
+  							</div>
+					        </div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			<div class="popUp">
+			<div class="modal fade" id="myModal3" role="dialog">
+			    <div class="modal-dialog modal-dialog-centered">	
+					<div class="modal-content">
+					        <div class="modal-header">
+								<h4 class="modal-title">Jack Astors</h4>
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        </div>
+					        <div class="modal-body">
+							  <ul style="list-style-type:circle"><font size="4">
+							    <li>4 Burgers</li>
+							    <li>3 Fries</li>
+							    <li>5 Soups</li>
+							  </ul>
+    							  <div class="centerCompany">
+    							  <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo2">GET CODE</button>
+    							    <div id="demo2" class="collapse">
+    								9527
+    							</font></div>
+    							</div>
+					        </div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+	   
+		
+			<script>
+				function initMap(){
+					var loc = {lat: 43.656319, lng: -79.362917};
+					var map = new google.maps.Map(document.getElementById('map'), {
+						zoom:15,
+						center: loc
+					});
+			        var marker = new google.maps.Marker({
+			          position: loc,
+			          map: map
+			        });
+			
+					var image = "blue.png";
+				        var oneMarker = new google.maps.Marker({
+				          position: {lat: 43.654000, lng: -79.363999},
+				          map: map,
+				          icon: image
+				        });
+				        var twoMarker = new google.maps.Marker({
+				          position: {lat: 43.657000, lng: -79.359999},
+				          map: map,
+				          icon: image
+				        });
+				        var threeMarker = new google.maps.Marker({
+				          position: {lat: 43.65765, lng: -79.366666},
+				          map: map,
+				          icon: image
+				        });
+					}
+			</script>
+		    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpnEDJeN89CtZG3pDb5XBiMWws1yEJ5eU&callback=initMap&callback=initMap">
+		    </script>
+				
+			<script>
+				function locationO(){
+					document.getElementById("oneSelected").innerHTML = "Hello World";
+				}
+				</script>
+	
+		</body>
+	</html>

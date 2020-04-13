@@ -4,6 +4,7 @@
 	<title>Financial insights</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	
  	<!-- CSS Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,15 +14,21 @@
 
 	<!-- Google font link -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
  	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="stylesheet" type="text/css" href="">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<!-- faveicon -->
  	<link rel="icon" href="images/icon.png">
 </head>
+
 <body>
- 	<div class="navtop">
- 		<!-- img src="images/Sara.png" height="80" alt="my logo" align="left"> -->
- 		<a href= "https://sara.azari.com" class="pink" alt="about">about</a>
- 		<a href="https://" class="pink" alt="work">work</a>
- 		<a href="https://" class="pink" alt="resume">resume</a>
+ 	<div class="navtop" id="myTopnav">
+ 		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
+ 		<a href="index.html" class="pink" alt="about" style="text-align: right;" >about</a>
+ 		<a href="index.html#work" class="pink active" alt="work" style="text-align: right;">work</a>
+ 		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
+ 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
  	</div>  
 
  	<div class="landing">
@@ -167,14 +174,16 @@
 
 
  	<div class="footer">
- 		<div class="navIcons">
- 			<a href= "https://sara.azari.com" class="pink link" alt="about">about</a>
- 			<a href="https://" class="pink link" alt="work">work</a>
- 			<a href="https://" class="pink link" alt="resume">resume</a>
+ 		<div>
+ 			<a href= "index.html" class="pink link" alt="about">about</a>
+ 			<a href="index.html#work" class="pink link" alt="work">work</a>
+ 			<a href="resume.html" class="pink link" alt="resume">resume</a>
  		</div>  
- 		<a href="https://dribbble.com/sara_azari"><h4 class="pink">More on Dribble</h4></a>
+ 		<a href="mailto:sara.razari@gmail.com"><h4 class="pink">Contact me</h4></a>
  		<div class="underlineSmall"></div>
  	</div>
+
+ 	<script type="text/javascript" src="portfolio.js"></script>
 
 </body>
 </html>

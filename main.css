@@ -27,7 +27,7 @@ body {
 }
 
 
-/* - - - - - - Color - - - - - - - - - - */
+/* - - - - - - - Color - - - - - - - - - - */
 .pink {
 	color: #aa00ff;
 }
@@ -39,13 +39,14 @@ body {
 	color: #e254ff;
 }
 
-/* - - - - - - -Typographt - - - - - - - -*/
+/* - - - - - - -Typography - - - - - - - -*/
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 40px;
 	font-weight: 400;
 	color: #000000;
 	opacity: 88%;
+	margin-top: 1em;
 }
 h2 {
 	font-family: 'Roboto', sans-serif;
@@ -97,45 +98,66 @@ a:hover {
 }
 
 
-/* - - - - - - - - Nav good - - - - - - - - */
+/* - - - - - - - - - - Nav  - - - - - - - - - - */
 .navtop {
-	text-align: right;
-	margin-top: 40px;
-}
-
-
-
-/* - - - - - - - - idk if good NAV - - - - - - -*/
-.nav {
-	display: flex;
-	align-items: center;
-	height: 100px;
-}
-.contactMe, .navIcon {
-	flex: 1; 
+	margin-top: 50px;
 }
 .navtop a {
 	margin-left: 40px;
 }
-.navIcons a, .contactMe a, .contactMe img {
-	display: inline-block;
-	vertical-align: middle;
+.navtop a.active {
+  background-color: #aa00ff;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.navtop .icon {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navtop a:not(:first-child) {display: none;}
+  .navtop a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-.contactMe a {
-	color: #00000095;
-	font-size: 2rem;
-	text-decoration: none;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .navtop.responsive {position: relative;}
+  .navtop.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navtop.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
-.contactMe img {
-	max-height: 40px;
-	margin-right: 10px;
+
+.nav {
+	display: flex;
+	align-items: center;
+	height: 200px;
+}
+
+/* Contact */
+
+.navIcons {
+	flex: 1; 
+}
+.navIcons a{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2em;
+	margin-left: 40px;
 }
 
 /* - - - - - - - - Landing good - - - - - - - - */
 .landing {
 	position: relative;
-	margin-top: 2em;
+	margin-top: 4em;
 }
 
 ul {
@@ -144,18 +166,42 @@ ul {
 	margin-top: 10px;
 	margin-left: 40px;
 }
-
-
-
-
-/* - - - - - - - - Landing edit when on the main page- - - - - - - - */
 .landingWrapper {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 40px;
 }
 
+.landing img {
+	margin-top: 4rem;
+	margin-right: 4rem;
+}
 
+/* - - - - - - - - Skills - - - - - - - - */
+.skills {
+	text-align: left;
+	margin-bottom: 10em;
+}
+.skills img {
+	width: 40px;
+	margin-right: 15px; 
+}
+
+/* - - - - - - - - Footer - - - - - - - - */
+.footer {
+	padding-bottom: 7em;
+	text-align: center;
+}
+.footer a {	
+	text-decoration: none;
+}
+.underlineSmall {
+	display: block;
+	height: 3px;
+	width: 41px;
+	margin: 5px auto 0 auto;
+	background-color: #bbbbbb; 
+}
 .scroll {
 	position: absolute;
 	bottom: 180px;
@@ -163,19 +209,12 @@ ul {
 	right: 0;
 	margin: auto;
 }
-
-.skills {
-	text-align: center;
-	margin-bottom: 20em;
+.container{
+	margin-top: 2rem;
 }
-.skills p {
-	margin-bottom: 30px;
+.card {
+	border-color:#ffffff;
 }
-.skills img {
-	width: 40px;
-	margin: 0 15px;
-}
-
 
 /* - - - - - - - - Project 1 what??? - - - - - - - - */
 .work {
@@ -251,25 +290,4 @@ ul {
 .work a, .work2 a {
 	text-decoration: none;
 	color: #17191A;
-}
-
-/* - - - - - - - - Footer - - - - - - - - */
-.footer {
-	background-image: url(images/Dribble_Blue_Large.png);
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: 320px;
-	padding-bottom: 7em;
-	text-align: center;
-}
-.footer a {
-	color: 027BFF;
-	text-decoration: none;
-}
-.underlineSmall {
-	display: block;
-	height: 3px;
-	width: 41px;
-	margin: 5px auto 0 auto;
-	background-color: #bbbbbb; 
 }
