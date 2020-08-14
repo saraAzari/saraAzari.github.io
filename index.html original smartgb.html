@@ -55,7 +55,7 @@
  		</div>-->
 
  		<!-- contact -->
- 		<p>I am currently a UX designer at PointClickCare. 👩🏻‍💻<br>I am happy to chat about new oppurtunities. &#x1F913; <br>You can contact me through</p>
+ 		<p>I am currently a UX designer at PointClickCare. &#x1F4BB;<br>I am happy to chat about new oppurtunities. &#x1F913; <br>You can contact me through</p>
  			<!-- <a href="mailto:sazari@my.yorku.ca"><img src="images/email.png" alt="chat logo">Contact Me</a> -->
  		<div class="navIcons">
  			<a href="mailto:sara.razari@gmail.com"><i class="far fa-envelope" alt="chat logo"></i></a>
@@ -74,6 +74,8 @@
  				<img src="images/invision.png" alt="invision icon">
  			</ul>
  		</div>
+ 		<input type="image" src="logg.png" name="saveForm" class="btTxt submit" id="saveForm" />
+
 	</div> -->
 
 	<!-- Projects -->
@@ -82,11 +84,54 @@
 		<h2>Projects</h2>
 		<div class="container">
 			<div class="row">
-				<!-- Financial insights -->
-
 				
+				<!-- Evergreen -->	
 				<SCRIPT>
-					function passWord() {
+					function passWord1() {
+						var testV = 1;
+						var pass1 = prompt('Please Enter Your Password','');
+						while (testV < 30) {
+							if (!pass1) window.open('index.html'); //cancel
+							if (pass1.toLowerCase() == "sara2020") {
+								alert('You Got it Right!');
+								window.open('Evergreen.html');
+								break;
+							}
+							testV+=1;
+							var pass1 =	prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+						}
+							if (pass1.toLowerCase()!="sara2020" & testV ==30) history.go(-1);
+								return " ";
+					}
+				</SCRIPT>
+			
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/Evergreen.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">PonitClickCare Design System</h5>
+ 							<a class="pink" onClick="passWord1()"><h4>View Project</h4></a>
+ 						</div>
+					</div>
+				</div>
+
+				<!-- Visualize -->
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/Visualize.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Harmony visualize</h5>
+ 							<a class="pink" href=""><h4>Coming soon...</h4></a>
+ 						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				
+
+				<!-- Financial insights -->
+				<SCRIPT>
+					function passWord2() {
 						var testV = 1;
 						var pass1 = prompt('Please Enter Your Password','');
 						while (testV < 30) {
@@ -106,10 +151,10 @@
 			
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/financial.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/financial.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">PonitClickCare Financial Insights</h5>
- 							<a class="pink" href="Financial insights.html" onClick="passWord()"><h4>View Project</h4></a>
+ 							<a class="pink" onClick="passWord2()"><h4>View Project</h4></a>
  						</div>
 					</div>
 				</div>
@@ -117,7 +162,7 @@
 				<!-- EATUP -->
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/Group 3.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/Group 3.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">EATUP</h5>
  							<a class="pink" href="eatup.html"><h4>View Project</h4></a>
@@ -125,12 +170,12 @@
  						</div>
 					</div>
 				</div>	
-			</div>
+			</div> <br>
 			<div class="row">
 				<!-- MEMOME -->
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/memome_1.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/memome_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">MEMOME</h5>
 							<a class="pink" href="memome.html"><h4>View Project</h4></a>
@@ -141,7 +186,7 @@
 				<!-- The colors game -->
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/color_1.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/color_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">The Colors Game</h5>
  							<a class="pink" href="colorGame.html"><h4>PLAY!</h4></a>
@@ -149,29 +194,30 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> <br>
+			<!--
 			<div class="row">
-				<!-- ENAMEL -->
+				<!-- ENAMEL -- COMMENT ME
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/enamel_1.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/enamel_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">EnaMeL</h5>
 							<a class="pink" href="password/TBB.html"><h4>View Project</h4></a>
 						</div>
 					</div>
 				</div>
-				<!-- YRT APP -->
+				<!-- YRT APP COMMENT ME
 				<div class="col-lg-6 mb-6">
 					<div class="card">
-						<img src="images/yrt_1.png" alt="project image" style="width: 400px; height: 400px; margin: auto;">
+						<img src="images/yrt_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">YRT APP Redesign</h5>
 							<h4 class="pink">Coming Soon...</h4>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<br>
