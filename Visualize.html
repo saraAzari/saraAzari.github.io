@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualize</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	
+ 	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+	<!-- Google font link -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="stylesheet" type="text/css" href="">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<!-- faveicon -->
+ 	<link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+ 	<div class="navtop" id="myTopnav">
+ 		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
+ 		<a href="index.html" class="pink" alt="about" style="text-align: right;" >about</a>
+ 		<a href="index.html#work" class="pink active" alt="work" style="text-align: right;">work</a>
+ 		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
+ 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+ 	</div>  
+
+ 	<div class="landing">
+ 		<h1>Visualize</h1>
+ 		<img src="visualize exports/Apple iMac Retina.png" alt="Responsive" width="90%" class="center">
+ 		<p>
+			
+ 		</p>
+ 	</div>
+ 		<h2>Why</h2>
+ 		<h3>Problem definition and use case</h3>
+ 		<p>
+			Harmony visualize is a direct response to needs of PointClickCare user personas Casey and Patty. Casey and Patty personas both work at the hospital. Casey is responsible for the entire care period planning of senior patients who stay at her hospital. Patty is responsible for keeping up with a Preffred Provider Network (PPN) for her hospital where Casey can discharge patients to.
+		</p>
+		<h3>Who</h3> <br>
+		<img src="visualize exports/Casey the Case manager.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+		<br>
+		<img src="visualize exports/Patty the PPN manager.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+ 		
+ 		<br>
+ 		<p>
+ 		In senior care, there is the concept of care period; Care period refers to 90 days of care starting from the day a patient is hospitalized. <br>
+		Payers pay the hospital in bundled payments based on the type of the care patients receive.
+		<ul>
+			<li>Make sure patients receive the proper care they need</li>
+			<li>Reduce the time patients spend at the hospital, without risking their well-being</li>
+			<li>Reduce the risk of patients coming back to the hospital, while keeping their stay at the SNF as short as possible</li>
+		</ul>
+ 		</p>
+ 		<br>
+ 		<h2>Design process</h2>
+ 		<h3>As-Is scenario</h3>
+ 		<p>
+ 			Casey has to follow up with her patients after they leave the hospital. Patients get discharged to either a senior nursing facility, or back to their community. Casey follows up with staff from SNF or patinet's family to make sure care plan is being followed, and patinet is not under rehospitalization risk. i.e patient is getting the proper care, taking their medications, therapy, and right activities.<br>
+ 			Before Visualize 2.0, most of this communication happened over the phone. Casey had a hard time tracking down hospital staff to get this information. She often had to drive to senior nursing facilities to follow up and check up on her patients in person, since most of the information she recieved was outdated and inaccurate to the most recent events.
+		</p>
+		<br>
+		<h3>Whiteboarding, wireframes and lo-fi prototypes</h3>
+		<br>
+		<img src="Visualize exports/whiteboard.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+		<br>
+
+ 		<h3>Challenges</h3>
+ 		<ul>
+ 			<li>Information architecture: We knew we wanted to create two different UIs for patty and casey, but we did not know how their workflow will start from a home page (overview page). We decided to land users on different pages depending on their roles. The final product is intuitive to both personas.</li>
+ 			<li>Visualize 2.0 is the first PointClickCare application that uses Power BI reports. Older insights application used react based data visualization libraries, and we have a design library of interactive components for data visualizations. In the beginning of this project, not only engineering teams needed to resolve complexities of using Power BI reports, but also designers had to find a way to bring consistency and design guidelines to Power BI reports. My team and I created a set of guidelines for PointClickCare Power BI applications, including guidelines on using visualizations, page setup, component details, and more.</li>
+ 			<li>Some of the UI pages are Power BI reports, and some are react and follow PointClickCare design library. This means we needed to be extra careful with our Power BI design guidelines, and make sure users don't feel any difference between pages that are based on Power BI and react.</li>
+ 			<li>Covid-19 pandemic made it extremely difficult to perform user testing on later iterations with our personas.</li>
+ 			<li>The pandemic also introduced an oppurtunity to use Visualize 2.0 to help reduce spread of Covid-19. Designing this new feature in a short amount of time was challenging because it was unknown how much access senior nursing facilities were going to have to tests.</li>
+ 			<li>Power BI reports are not responsive out of the box, so we had to decide on a certain screen size, and write guidelines on sizing of reports.</li>
+ 		</ul>
+
+
+ 		<h2>The solution</h2> 	
+		<h3>Scorecard and Analysis</h3>
+		<img src="visualize exports/Scorecard.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Scorecard-pac discharges.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Scorecard-clicked on facility.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Scorecard-clicked on analyze hover.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		
+		<h3>Transitions of care</h3>
+		<img src="visualize exports/Transitions 1.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Transitions 2.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		
+		<h3>Patient monitoring</h3>
+		<img src="visualize exports/Monitoring active stays specific month 1.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Monitoring completed stays date picker.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+
+		<h3>Patient chart</h3>
+		<img src="visualize exports/Overview FINAL hover on vitals.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Diagnoses FINAL.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Scrolling.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+
+		<h3>COVID-19 pages</h3>
+		<img src="visualize exports/Infections closed cases (covid-19 only) FINAL.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+
+		<h3>States</h3>
+		<img src="visualize exports/Overview loading.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Empty state.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+		<img src="visualize exports/Diagnoses loading error.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);"> <br>
+
+		<p>
+			As of now, Visualize 2.0 pilot is released to a few happy users.
+		</p>
+		
+ 		<h2>Learnings</h2>
+ 		<p>
+ 			Designing Visualize 2.0 and Power BI guidelines, helped me learn more about data visualization and how to create beautiful and usable PBI reports.
+ 			I also learned how to design multi-line charts with a shared x axis and multiple controls.
+ 		</p>
+
+ 		<h2>Team</h2>
+ 		<p>
+ 			I worked on this product as UX designer for the entire product life cycle. My main design work happened between Dec 2019 and September 2020.
+ 			I collaborated with product managers, a senior UX designer, multiple teams of engineers including react developers, Power BI experts, QA, and data scientists.
+ 		</p>
+
+
+ 	<div class="footer">
+ 		<div>
+ 			<a href= "index.html" class="pink link" alt="about">about</a>
+ 			<a href="index.html#work" class="pink link" alt="work">work</a>
+ 			<a href="resume.html" class="pink link" alt="resume">resume</a>
+ 		</div>  
+ 		<a href="mailto:sara.razari@gmail.com"><h4 class="pink">Contact me</h4></a>
+ 		<div class="underlineSmall"></div>
+ 	</div>
+
+ 	<script type="text/javascript" src="portfolio.js"></script>
+
+</body>
+</html>

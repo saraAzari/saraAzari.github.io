@@ -116,12 +116,30 @@
 				</div>
 
 				<!-- Visualize -->
+				<SCRIPT>
+					function passWord2() {
+						var testV = 1;
+						var pass1 = prompt('Please Enter Your Password','');
+						while (testV < 30) {
+							if (!pass1) window.open('index.html'); //cancel
+							if (pass1.toLowerCase() == "sara2020") {
+								alert('You Got it Right!');
+								window.open('Financial insights.html');
+								break;
+							}
+							testV+=1;
+							var pass1 =	prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+						}
+							if (pass1.toLowerCase()!="sara2020" & testV ==30) history.go(-1);
+								return " ";
+					}
+				</SCRIPT>
 				<div class="col-lg-6 mb-6">
 					<div class="card">
 						<img src="images/Visualize.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
 						<div class="card-body">
 							<h5 class="card-title">Harmony visualize</h5>
- 							<a class="pink" href=""><h4>Coming soon...</h4></a>
+ 							<a class="pink" href=""><h4>View Project</h4></a>
  						</div>
 					</div>
 				</div>	
