@@ -26,37 +26,34 @@
 <body>
 	<div class="navtop" id="myTopnav">
  		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
- 		<a href= "index.html" class="pink active" alt="about" style="text-align: right;" >about</a>
- 		<a href="work.html" class="pink" alt="work" style="text-align: right;">work</a>
+ 		<a href= "index.html" class="pink" alt="about" style="text-align: right;" >about</a>
+ 		<a href="work.html" class="pink active" alt="work" style="text-align: right;">work</a>
  		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
  		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
  	</div>  
 
+<!--
  	<div class="landing">
  		<div class="landingWrapper">
  			<div>
- 				<br><br><br>
  				<h1>Hi there</h1>
- 				<!-- contact -->
- 			<p>I am currently a UX designer at PointClickCare &#x1F4BB;<br> Seeking full time product design oppurtunities &#x1F913; <br>Let's chat, there is a latte to discuss ☕️ </p>
- 			<!-- <a href="mailto:sazari@my.yorku.ca"><img src="images/email.png" alt="chat logo">Contact Me</a> -->
- 			<div class="navIcons">
- 			<a href="mailto:sara.razari@gmail.com"><i class="far fa-envelope" alt="chat logo"></i></a>
- 			<a href="https://www.linkedin.com/in/sara-azari/"><i class="fab fa-linkedin icon-3x pink" alt="Linkedin logo"></i></a>
- 			<a href="https://github.com/saraAzari"> <i class="fab fa-github pink icon-3x" alt="github logo"></i></a>
- 			<a href="https://dribbble.com/sara_azari"><i class="pink fab fa-dribbble icon-3x" alt="	dribble logo"></i></a>
- 			</div> 
- 		</div>
- 		<div>
+ 				<p>My name is Sara.<br> I am a UX designer. I'm interested in</p>
+ 				<ul style="list-style-type:none">
+ 					<li><p> <i class="pink fas fa-laptop"></i> Universal design</p></li>
+ 					<li><p> <i class="pink fas fa-laptop"></i> User research</p></li>
+ 					<li><p> <i class="pink fas fa-laptop"></i> Running design sprints</p></li>
+ 					<li><p> <i class="pink fas fa-laptop"></i> Building design systems</p></li>
+ 					<li><p> <i class="pink fas fa-laptop"></i> Front-end development</p></li>
+ 				</ul>
+ 			</div>
+ 			<div>
  				<img src="images/undraw_redesign_feedback_48ti.png" alt="picture" width="500px;">
  			</div>
- 	</div>
+ 		</div>
  		<!--<div class="button">
  			<button alt="scroll down" class="scroll" id="scroll"> <img src="images/Scroll.png"></button>
  			style="background-image: url(images/Scroll.png)"
  		</div>-->
-
- 		
 
  		<!--Skills
 		<div class="skills">
@@ -75,11 +72,11 @@
 	<!-- Projects -->
 	<a id="work"></a>
 	<section id="projects">
-		<h1>Selected work</h1>
-		<br><br>
+		<h1>Projects</h1>
 		<div class="container">
-			<div class="row">	
-				<!-- Evergreen -->
+			<div class="row">
+				
+				<!-- Evergreen -->	
 				<SCRIPT>
 					function passWord1() {
 						var testV = 1;
@@ -88,7 +85,7 @@
 							if (!pass1) window.open('index.html'); //cancel
 							if (pass1.toLowerCase() == "sara2020") {
 								alert('You Got it Right!');
-								window.open('Evergreen.html' , "_self");
+								window.open('Evergreen.html');
 								break;
 							}
 							testV+=1;
@@ -98,18 +95,18 @@
 								return " ";
 					}
 				</SCRIPT>
-				<div class="col-lg-6 mb-6 card kiki">
-					<img src="images/Evergreen.png" alt="project image" style="width: 500px; height: 500px; margin: auto;" onClick="passWord1()">
+			
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/Evergreen.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">PonitClickCare Design System</h5>
+ 							<a class="pink" onClick="passWord1()"><h4>View Project</h4></a>
+ 						</div>
+					</div>
 				</div>
-				<div class="col-lg-6 mb-6 card-body">
-					<h5 class="card-title">PonitClickCare Design System</h5>
- 					<a class="pink" onClick="passWord1()"><h4>View Project</h4></a>
-				</div>
-			</div>
-			<br><br><br>
 
-			<!-- Visualize -->
-			<div class="row">
+				<!-- Visualize -->
 				<SCRIPT>
 					function passWord3() {
 						var testV = 1;
@@ -118,7 +115,7 @@
 							if (!pass1) window.open('index.html'); //cancel
 							if (pass1.toLowerCase() == "sara2020") {
 								alert('You Got it Right!');
-								window.open('Visualize.html' , "_self");
+								window.open('Visualize.html');
 								break;
 							}
 							testV+=1;
@@ -128,18 +125,20 @@
 								return " ";
 					}
 				</SCRIPT>
-				<div class="col-lg-6 mb-6 card kiki">
-					<img src="images/Visualize.png" alt="project image" style="width: 500px; height: 500px; margin: auto;" onClick="passWord3()">
-				</div>
-				<div class="col-lg-6 mb-6 card-body">
-					<h5 class="card-title">Harmony visualize</h5>
- 					<a class="pink" onClick="passWord3()"><h4>View Project</h4></a>
- 				</div>
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/Visualize.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">Harmony visualize</h5>
+ 							<a class="pink" onClick="passWord3()"><h4>View Project</h4></a>
+ 						</div>
+					</div>
+				</div>	
 			</div>
-			<br><br><br>
-			
-			<!-- Financial insights -->
 			<div class="row">
+				
+
+				<!-- Financial insights -->
 				<SCRIPT>
 					function passWord2() {
 						var testV = 1;
@@ -148,7 +147,7 @@
 							if (!pass1) window.open('index.html'); //cancel
 							if (pass1.toLowerCase() == "sara2020") {
 								alert('You Got it Right!');
-								window.open('Financial insights.html' , "_self");
+								window.open('Financial insights.html');
 								break;
 							}
 							testV+=1;
@@ -159,17 +158,75 @@
 					}
 				</SCRIPT>
 			
-				<div class="col-lg-6 mb-6 card kiki">
-					<img src="images/financial.png" alt="project image" style="width: 500px; height: 500px; margin: auto;" onClick="passWord2()">
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/financial.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">PonitClickCare Financial Insights</h5>
+ 							<a class="pink" onClick="passWord2()"><h4>View Project</h4></a>
+ 						</div>
+					</div>
 				</div>
-				<div class="col-lg-6 mb-6 card-body">
-						<h5 class="card-title">PonitClickCare Financial Insights</h5>
- 						<a class="pink" onClick="passWord2()"><h4>View Project</h4></a>
- 				</div>
-			</div>
-		</div>		
+
+				<!-- EATUP -->
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/Group 3.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">EATUP</h5>
+ 							<a class="pink" href="eatup.html"><h4>View Project</h4></a>
+ 							<a href="https://github.com/ChloeIerullo/ellehacks"><i class="fab fa-github pink icon-3x" alt="github logo" style="font-size: 50px;"></i></a>
+ 						</div>
+					</div>
+				</div>	
+			</div> <br>
+			<div class="row">
+				<!-- MEMOME -->
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/memome_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">MEMOME</h5>
+							<a class="pink" href="memome.html"><h4>View Project</h4></a>
+							<a href="https://invis.io/MHPPTH73TZK"><i class="fab fa-invision pink" alt="invision logo" style="font-size: 50px;"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- The colors game -->
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/color_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">The Colors Game</h5>
+ 							<a class="pink" href="colorGame.html"><h4>PLAY!</h4></a>
+ 							<a href=""><i class="fab fa-github pink icon-3x" alt="github logo" style="font-size: 50px;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div> <br>
+			<div class="row">
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/enamel_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">EnaMeL</h5>
+							<a class="pink" href="password/TBB.html"><h4>View Project</h4></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-6">
+					<div class="card">
+						<img src="images/yrt_1.png" alt="project image" style="width: 500px; height: 500px; margin: auto;">
+						<div class="card-body">
+							<h5 class="card-title">YRT APP Redesign</h5>
+							<h4 class="pink">Coming Soon...</h4>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
 	</section>
-	<br><br><br>
+	<br>
 
 
  	<div class="footer">

@@ -95,8 +95,13 @@ a:hover {
   color: #7200ca;
   text-decoration: none;
   text-shadow: 0.5px 0 0 currentColor;
+  cursor: pointer;
 }
 
+.kiki:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
 
 /* - - - - - - - - - - Nav  - - - - - - - - - - */
 .navtop {
@@ -177,16 +182,6 @@ ul {
 	margin-right: 4rem;
 }
 
-/* - - - - - - - - Skills - - - - - - - - */
-.skills {
-	text-align: left;
-	margin-bottom: 10em;
-}
-.skills img {
-	width: 40px;
-	margin-right: 15px; 
-}
-
 /* - - - - - - - - Footer - - - - - - - - */
 .footer {
 	padding-bottom: 7em;
@@ -214,80 +209,4 @@ ul {
 }
 .card {
 	border-color:#ffffff;
-}
-
-/* - - - - - - - - Project 1 what??? - - - - - - - - */
-.work {
-	width: 100%;
-	position: relative;
-	margin-bottom: 20em;
-}
-.work > .workText {
-	position: absolute;
-	top: 85px;
-}
-.work > .workText > .underline {
-	display: block;
-	background-color: #bbbbbb;
-	height: 3px;
-	width: 61px;
-	margin-top: 5px;
-}
-.work > .workImg {
-	width: 85%;
-	float: right;
-	-webkit-box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-	-moz-box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-	box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-}
-.work ul {
-	position: absolute;
-	bottom: 0;
-	right: 86%;
-}
-.work ul li {
-	margin-top: 20px;
-}
-
-
-/* - - - - - - - - Project 2 what??? - - - - - - - - */
-.work2 {
-	width: 100%;
-	position: relative;
-	margin-bottom: 20em;
-}
-.work2 > .workText {
-	position: absolute;
-	top: 85px;
-	right: 0;
-	text-align: right;
-}
-.work2 > .workText > .underline {
-	display: block;
-	background-color: #bbbbbb;
-	height: 3px;
-	width: 61px;
-	margin-top: 5px;
-	float: right;
-}
-.work2 > .workImg {
-	width: 85%;
-	float: left;
-	-webkit-box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-	-moz-box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-	box-shadow: 0px 3px 70px 8px rgba(23,30,36,0,06);
-}
-.work2 ul {
-	position: absolute;
-	bottom: 0;
-	left: 86%;
-}
-.work2 ul li {
-	margin-top: 20px;
-}
-
-/* - - - - - - - - Project 2 - - - - - - - - */
-.work a, .work2 a {
-	text-decoration: none;
-	color: #17191A;
 }
