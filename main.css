@@ -33,14 +33,16 @@ body {
 
 /* - - - - - - - Color - - - - - - - - - - */
 .pink {
-	color: #aa00ff;
+	color: #C39898;
 }
 
 .dark {
-	color: #7200ca;
+	color: #493628;
 }
 .light {
-	color: #e254ff;
+	color: #D6C0B3;
+.espressop_shoadow {
+	color: #E4E0E1;
 }
 
 /* - - - - - - -Typography - - - - - - - -*/
