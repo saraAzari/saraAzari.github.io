@@ -54,7 +54,7 @@ h1 {
 h2 {
 	font-size: 32px;
 	font-weight: 400;
-	color: #7200ca;
+	color: #493628;
 	margin-top: 40px;
 	margin-bottom: 12px;
 }
@@ -85,11 +85,11 @@ li {
 	text-align: left;
 }
 a {
-		color: #aa00ff;
+	color: #493628;
 	font-size: 18px;
 }
 a:hover {
-  color: #7200ca;
+  color: #000;
   text-decoration: none;
   text-shadow: 0.5px 0 0 currentColor;
   cursor: pointer;
@@ -108,7 +108,7 @@ a:hover {
 	margin-left: 40px;
 }
 .navtop a.active {
-  background-color: #aa00ff;
+  background-color: #D6C0B3;
   color: white;
 }
 /* Hide the link that should open and close the topnav on small screens */
@@ -192,7 +192,7 @@ ul {
 	height: 3px;
 	width: 41px;
 	margin: 5px auto 0 auto;
-	background-color: #bbbbbb; 
+	background-color: #D6C0B3; 
 }
 .scroll {
 	position: absolute;
@@ -205,12 +205,12 @@ ul {
 	margin-top: 2rem;
 }
 .card {
-	border-color:#ffffff;
+	border-color:#E4E0E1;
 }
 
 /* - - - - - - - - Projects - - - - - - - - */
 .project {
-  background-color: #fff;
+  background-color: #E4E0E1;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
