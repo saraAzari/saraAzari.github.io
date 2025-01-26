@@ -1,5 +1,6 @@
 /* - - - - - - - - Global - - - - - - - - */
 * {
+	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -16,7 +17,10 @@
 }
 
 body {
+	font-size: 16px;
 	width: 80%;
+	line-height: 1.5;
+ 	color: #333;
 	margin: auto;
 }
 
@@ -41,7 +45,6 @@ body {
 
 /* - - - - - - -Typography - - - - - - - -*/
 h1 {
-	font-family: 'Roboto', sans-serif;
 	font-size: 40px;
 	font-weight: 400;
 	color: #000000;
@@ -49,7 +52,6 @@ h1 {
 	margin-top: 1em;
 }
 h2 {
-	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
 	font-weight: 400;
 	color: #7200ca;
@@ -57,7 +59,6 @@ h2 {
 	margin-bottom: 12px;
 }
 h3 {
-	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
 	color: #000000;
@@ -65,21 +66,18 @@ h3 {
 	margin-top: 20px;
 }
 h4 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	margin-top: 10px;
 	color: #000000;
 	opacity: 76%;
 } 
 p {
-	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	opacity: 88%;
 	margin-top: 10px;
 	font-size: 18px;
 }
 li {
-	font-family: 'Raleway', sans-serif;
 	color: #000000;
 	opacity: 88%;
 	margin-top: 10px;
@@ -87,8 +85,7 @@ li {
 	text-align: left;
 }
 a {
-	font-family: 'Raleway', sans-serif;
-	color: #aa00ff;
+		color: #aa00ff;
 	font-size: 18px;
 }
 a:hover {
@@ -209,4 +206,13 @@ ul {
 }
 .card {
 	border-color:#ffffff;
+}
+
+/* - - - - - - - - Projects - - - - - - - - */
+.project {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
