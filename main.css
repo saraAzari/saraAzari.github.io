@@ -108,6 +108,7 @@ a:hover {
 /* - - - - - - - - - - Nav  - - - - - - - - - - */
 .navtop {
 	margin-top: 50px;
+	align-items: flex-start;
 }
 .navtop a {
 	margin-left: 40px;
@@ -169,7 +170,7 @@ a:hover {
 .landingWrapper {
   display: flex; /* Enable Flexbox layout */
   justify-content: space-between; /* Add space between the items */
-  align-items: center; /* Vertically align items */
+  align-items: flex-start;
   gap: 20px; /* Optional: Add spacing between items */
 }
 
