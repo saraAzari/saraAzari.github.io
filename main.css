@@ -166,6 +166,21 @@ a:hover {
 	position: relative;
 	margin-top: 4em;
 }
+.landingWrapper {
+  display: flex; /* Enable Flexbox layout */
+  justify-content: space-between; /* Add space between the items */
+  align-items: center; /* Vertically align items */
+  gap: 20px; /* Optional: Add spacing between items */
+}
+
+.landingWrapper div {
+  flex: 1; /* Allow each child to take up equal space (optional) */
+}
+
+.landing img {
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto; /* Maintain aspect ratio */
+}
 
 ul {
 	list-style-position: outside;
@@ -173,17 +188,6 @@ ul {
 	margin-top: 10px;
 	margin-left: 40px;
 }
-.landingWrapper {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-}
-
-.landing img {
-	margin-top: 4rem;
-	margin-right: 4rem;
-}
-
 /* - - - - - - - - Footer - - - - - - - - */
 .footer {
 	padding-bottom: 7em;
