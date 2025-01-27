@@ -114,7 +114,7 @@ a:hover {
 }
 .navtop a.active {
   background-color: #D6C0B3;
-  color: white;
+  color: #704F4F;
 }
 /* Hide the link that should open and close the topnav on small screens */
 .navtop .icon {
