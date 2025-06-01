@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html>
+
+<script>
+  const accessCode = "7777"; // Change this to your desired code
+
+  function checkCode() {
+    let userCode = prompt("Enter access code:");
+    if (userCode !== accessCode) {
+      alert("Incorrect code! Access denied.");
+      window.location.href = "https://saraazari.com"; // Redirect on failure
+    }
+  }
+
+  checkCode();
+</script>
+
 <head>
 	<title>Financial insights</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	
- 	
-	<!-- Google font link was removed -->
-
+	<!--css-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
  	<link rel="stylesheet" type="text/css" href="main.css">
- 	<link rel="stylesheet" type="text/css" href="">
-x</head>
+ 	<!-- Google Icons -->
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+ 	<style>
+ 	img {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    max-width: calc(100% - 12rem); /* Crucial for responsiveness */
+    height: auto;
+    display: block;
+    /* Optional styles below for better visuals */
+	} 
+ 	</style>
+ </head>
 
 <body>
- 	<div class="navtop" id="myTopnav">
- 		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
- 		<a href="index.html" class="pink" alt="about" style="text-align: right;" >about me</a>
- 		<a href="index.html#work" class="pink active" alt="work" style="text-align: right;">work</a>
- 		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
- 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
- 	</div>  
+	<!--NAV-->
+	<div class="containerfortop">
+		<img src="logo_purple.png" alt="personal logo" width="293px" style="margin-left:0;">
+		<div class="navtop" id="myTopnav">	
+ 			<a href= "about.html" class="navtop" alt="about" style="text-align: right;" >My Story</a>
+ 			<a href="#work" class="navtop" alt="work" style="text-align: right;">Work</a>
+ 			<a href="#contact" class="navtop" alt="work" style="text-align: right;">Contact</a>
+ 			<a href="resume.html" class="navtop" alt="resume" style="text-align: right;">Resume</a>
+ 		</div>
+ 	</div>
 
- 	<div class="landing">
- 		<h1>Financial insights</h1>
- 		<img src="images/Resposive Presentation 2.png" alt="Responsive" width="90%" class="center">
- 		<p>
+ 	<div class="containerfortop">
+ 		 <h1>Financial Insights</h1>
+ 	</div>
+ 		<img src="Financial exports/Resposive Presentation 2.png" alt="Responsive" width="90%" class="center">
+ 		
+ 		<p style="margin-left: 6rem; margin-right: 6rem;">
 			Financial insights is a part of PointClickCare Insights suite. It brings real time visibility into how a Senior Nursing Facility (SNF) is performing in terms of PDPM (Patient Driven Payment Model) revenue. This analytics tool provides performance information at mutiple levels, including organizational, facility, and resident level. Using Financial insights helps facility administrators plan and budget for their facilities, track revenue and expending, and improve facility's performance. I worked on designing the UX and UI of this project with Bruce Ashtiani, Sr. UX desinger at PointClickCare.
  		</p>
- 	</div>
- 		<h2>Why</h2>
+ 	 		
+ 	 	<h2>Why</h2>
  		<h3>Problem definition and use case</h3>
- 		<p>
+ 		<p style="margin-left: 6rem; margin-right: 6rem;">
 			CMS (Centers for Medicare and Medicaid Services) introduced PDPM and Senior nursing facilities needed to make changes to their financial management routines and adapt.
 			PDPM revolutionized how SNFs operate by changing the way SNFs get paid and ensuring coordinated, quality care becomes a reality. <br>
 			These upcoming changes concerned Pointclickcare customers, and the product team spotted the need to provide the customers with a dashboard-like solution that could give SNF administrators quick and ready to consume real-time insights on how their facilities are doing.
-		</p>
+		</p>	
  		<h2>Who</h2>
- 		<p>
+ 		<p style="margin-left: 6rem; margin-right: 6rem;">
  			Target persona for Financial Insights is Adam, the Administrator.
  		</p>
+ 		<br>
  		<img src="Financial exports/Adam the Administrator.png" alt="Administrator Persona" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
  		<br>
  		<h2>The process</h2>
  		<h3>User research</h3>
- 		<p>
+ 		<p style="margin-left: 6rem; margin-right:6rem;">
  			We conducted bi-weekly remote user feedback sessions over zoom with 4 customers. We practiced think-aloud method, and asked users to go through workflows, while they express all their reactions, and give us feedback at the end of session. We conducted SUS after testing each work flow, for which the average results were above 90.<br>
  			Some of the learnings include
  			<ul>
@@ -56,7 +87,7 @@ x</head>
 		</p>
 		<br>
 		<h3>Whiteboarding, wireframes and lo-fi prototypes</h3>
-		<p>Starting with pen&paper and whiteboard, we drew all the ideas we had based on the results of user research.</p>
+		<p style="margin-left: 6rem">Starting with pen&paper and whiteboard, we drew all the ideas we had based on the results of user research.</p>
 		<img src="Financial exports/whiteboard.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
 		<br>
 		<img src="Financial exports/whiteboard 2.png" alt="Responsive" width="70%" class="center" style= "box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
@@ -72,106 +103,54 @@ x</head>
 
 
  		<h2>The solution</h2> 	
-		<p>
+		<p style="margin-left: 6rem; margin-right:6rem;">
 			After countlesss hours of ideation, numourus iterations on mockups, hours of customer calls, days of discussion between designers, product teams, and developers, we had a final product. Here are a few mockups:
 		</p>
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background: #aa00ff;">
-  			<!--<ol class="carousel-indicators">
-    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  			</ol>-->
-  			<div class="carousel-inner">
-    			<div class="carousel-item active">
-      				<img class="d-block w-100" src="Financial exports/Slideshow/Overview.png" alt="First slide">
-      				<!--<div class="carousel-caption d-none d-md-block">
-    					<h5>...</h5>
-    					<p>...</p>
-  						</div> -->
-    			</div>
-    			<div class="carousel-item">
-      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 1.png" alt="Second slide">
-    			</div>
-    			<div class="carousel-item">
-      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 2.png" alt="Third slide">
-    			</div>
-    			<div class="carousel-item">
-      				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 3.png" alt="Fourth slide">
-    			</div>
-    			<div class="carousel-item">
+      	<img src="Financial exports/Slideshow/Overview.png" alt="First slide">
+      	<img class="d-block w-100" src="Financial exports/Slideshow/Setting 1.png">
+      	<img class="d-block w-100" src="Financial exports/Slideshow/Setting 2.png">
+      	<img class="d-block w-100" src="Financial exports/Slideshow/Setting 3.png">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 4.png" alt="5th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 5.png" alt="6th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 6.png" alt="7th" slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 7.png" alt="8th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Setting 8.png" alt="9th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/v3.png" alt="10th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 1.png" alt="11th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 2.png" alt="12th slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 3.png" alt="13 slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Fac 4.png" alt="14 slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/Initial.png" alt="15 slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/PC.png" alt="16 slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/pt.png" alt="17 slide">
-    			</div>
-    			<div class="carousel-item">
+    			
       				<img class="d-block w-100" src="Financial exports/Slideshow/slp.png" alt="18 slide">
-    			</div>
-  			</div>
-  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    			<span class="sr-only">Previous</span>
-  			</a>
-  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-   				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-   				<span class="sr-only">Next</span>
-  			</a>
-		</div>
 
-		<p>
+		<br>
+		<p style="margin-left: 6rem; margin-right: 6rem;">
 			Customers are exceptionally satisfied with Financial insights product. In the future financial inisghts will be a part of a bigger insights platform that will include more perfomance analytics products.
 		</p>
 		
  		<h2>Learnings</h2>
- 		<p>
+ 		<p style="margin-left: 6rem; margin-right:6rem;">
  			My biggest take away is the magic that happens when all teams collaborate to make the best possible outcome happen, trust each other, and keep communications going.
  			If I could improve anything I would do post-release user testings to observe how users are using the product now that it has been available to them for a couple of months. I'm sure we can get some insights from users and make more improvements to the product.
  		</p>
 
-
- 	<div class="footer">
- 		<div>
- 			<a href= "index.html" class="pink link" alt="about">about</a>
- 			<a href="index.html#work" class="pink link" alt="work">work</a>
- 			<a href="resume.html" class="pink link" alt="resume">resume</a>
- 		</div>  
- 		<a href="mailto:sara.razari@gmail.com"><h4 class="pink">Contact me</h4></a>
- 		<div class="underlineSmall"></div>
- 	</div>
 
  	<script type="text/javascript" src="portfolio.js"></script>
 

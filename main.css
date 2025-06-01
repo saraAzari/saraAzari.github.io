@@ -1,4 +1,4 @@
-/* - - - - - - - - Global - - - - - - - - */
+/* - - - - - - - - - - - - - Global - - - - - - - - - - - */
 * {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
@@ -16,107 +16,112 @@
 	display: table;
 }
 
+
+/* - - - - - - - - - - - - COLOR - - - - - - - - - - - - - - */
+.purple {
+	color: #8C52FF;
+}
+
+/* - - - - - - - - - - - - TYPE  - - - - - - - - - - - - - - */
+
 body {
-	font-size: 16px;
-	width: 80%;
-	line-height: 1.5;
- 	color: #333;
-	margin: auto;
+	font-size: 1rem;
+	line-height: 1.25rem;
+ 	color: #534D4D;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* - - - - - - - Color - - - - - - - - - - */
-.pink {
-	color: #C39898;
-}
-.medium {
-	color: #704F4F;
-}
-.dark {
-	color: #493628;
-}
-.light {
-	color: #D6C0B3;
-}
-.espressop_shoadow {
-	color: #E4E0E1;
-}
-
-/* - - - - - - -Typography - - - - - - - -*/
 h1 {
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 400;
-	color: #000000;
+	color: #000;
 	opacity: 88%;
-	margin-top: 1em;
+	margin-top: 1rem;
 }
 h2 {
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 400;
-	color: #493628;
-	margin-top: 40px;
-	margin-bottom: 12px;
+	color: #000;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	margin-left: 6rem;
 }
 h3 {
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 300;
 	color: #000000;
 	opacity: 80%;
-	margin-top: 20px;
+	margin-top: 1.25rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2rem;
+	margin-left: 6rem;
 }
 h4 {
-	font-size: 20px;
-	margin-top: 10px;
+	font-size: 1.25rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
 	color: #000000;
-	opacity: 76%;
+	opacity: 64%;
 } 
 p {
-	color: #000000;
-	opacity: 88%;
-	margin-top: 10px;
-	font-size: 18px;
-}
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 1rem;
+ line-height: 1.5rem;
+ /* or 140% */
+ letter-spacing: 0.08em;
+ color: #534D4D;
+ }
+
 li {
 	color: #000000;
 	opacity: 88%;
-	margin-top: 10px;
-	font-size: 18px;
+	margin-top: 1rem;
+	font-size: 1.125rem;
 	text-align: left;
-}
-a {
-	color: #493628;
-	font-size: 18px;
-}
-a:hover {
-  color: #000;
-  text-decoration: none;
-  text-shadow: 0.5px 0 0 currentColor;
-  cursor: pointer;
+	margin-left: 6rem;
+	margin-right: 6rem;
+
 }
 
-.kiki:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
-/* - - - - - - - - - - Nav  - - - - - - - - - - */
+/* - - - - - - - - - - NAV  - - - - - - - - - - */
 .navtop {
-	margin-top: 50px;
-	align-items: flex-start;
+	margin-top: 3rem;
+	display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  gap: 24px; /* Ensures 24px space between items */
+  padding-right: 24px; /* Optional: Adds some spacing from the right edge */
 }
-.navtop a {
-	margin-left: 40px;
+
+a {
+ font-style: normal;
+ font-weight: 400;
+ font-size: 1.25rem;
+ line-height: 1.5rem;
+ /* identical to box height, or 140% */
+ letter-spacing: 0.08em;
+ color: #534D4D;
+ /* Inside auto layout */
+ flex: none;
+ order: 0;
+ flex-grow: 0;
+ text-decoration: none; !important;
 }
+
+a:hover {
+ font-weight: 600;
+ /* identical to box height, or 140% */
+ color: #000000;
+ text-shadow: 0.5px 0 0 currentColor;
+ cursor: pointer;
+}
+
 .navtop a.active {
   background-color: #D6C0B3;
   color: #704F4F;
 }
+
+/* Resposinve stuff - not done */
 /* Hide the link that should open and close the topnav on small screens */
 .navtop .icon {
   display: none;
@@ -144,14 +149,6 @@ a:hover {
   }
 }
 
-.nav {
-	display: flex;
-	align-items: center;
-	height: 200px;
-}
-
-/* Contact */
-
 .navIcons {
 	flex: 1; 
 }
@@ -162,26 +159,69 @@ a:hover {
 	margin-left: 40px;
 }
 
-/* - - - - - - - - Landing good - - - - - - - - */
-.landing {
-	position: relative;
-	margin-top: 4em;
-}
-.landingWrapper {
-  display: flex; /* Enable Flexbox layout */
-  justify-content: space-between; /* Add space between the items */
-  align-items: flex-start;
-  gap: 20px; /* Optional: Add spacing between items */
+/* - - - - - - - - - - - - LANDING - - - - - - - - - - - - - */
+.containerfortop {
+    display: flex;
+    justify-content: space-between; /* Places one item on the left and one on the right */
+    align-items: center; /* Centers items vertically */
+    padding: 0 24px; /* Adds some spacing from the edges */
+    margin-left: 4rem;
+    margin-top: 3rem;
 }
 
-.landingWrapper div {
-  flex: 1; /* Allow each child to take up equal space (optional) */
+.containerfortop div {
+  flex-grow: 1; /* Allows divs to grow, but doesn't force equal width */
 }
 
-.landing img {
-  max-width: 100%; /* Ensure the image scales properly */
-  height: auto; /* Maintain aspect ratio */
+.logocontainer{
+	margin-top: 2rem;
+	display: flex;
+	align-items: center; /* Center align images vertically */
+  gap: 1.5rem; /* Adds spacing between images */
+  justify-content: flex-start;
 }
+
+.iconText {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 8px; /* Adds space between icon and text */
+    margin-bottom: 1em;
+}
+
+.slider {
+	  margin-top: 2rem;
+	  margin-bottom: 2rem;
+    width: 100vw;  /* Full viewport width */
+    height: 10vh; /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    width: 100%;  /* Double the width to fit two images side by side */
+    height: 10vh; /* Ensure the container height is 100% of the viewport */
+    animation: slide 15s linear infinite;
+}
+
+.slide img {
+    width: 100vw;  /* Image width set to 100% of the viewport width */
+    height: 10vh; /* Image height set to 100% of the viewport height */
+    object-fit: contain;  /* Ensures the image covers the whole area without distortion */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* List */
 
 ul {
 	list-style-position: outside;
@@ -189,7 +229,51 @@ ul {
 	margin-top: 10px;
 	margin-left: 40px;
 }
-/* - - - - - - - - Footer - - - - - - - - */
+
+
+/* - - - - - - - - - - - WORK - - - - - - - - - - - - - - */
+
+.workcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 400px); /* Two columns, each 400px wide */
+    gap: 200px; /* 200px spacing between columns */
+    justify-content: center; /* Centers the grid horizontally */
+    padding: 20px; /* Optional: Adds some padding around the grid */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    border-color:#E4E0E1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem; /* 1rem padding inside the card */
+    text-align: center;
+    cursor: pointer; /* Makes the card clickable */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.card img {
+    width: 100%; /* Makes the image fill the card */
+    border-radius: 8px; /* Optional: Rounds the corners */
+}
+
+
+/* This might be for the actual page of work */
+.project {
+  background-color: #E4E0E1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* - - - - - - - - FOOTER NOT DONE - - - - - - - - */
 .footer {
 	padding-bottom: 7em;
 	text-align: center;
@@ -203,26 +287,4 @@ ul {
 	width: 41px;
 	margin: 5px auto 0 auto;
 	background-color: #D6C0B3; 
-}
-.scroll {
-	position: absolute;
-	bottom: 180px;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-.container{
-	margin-top: 2rem;
-}
-.card {
-	border-color:#E4E0E1;
-}
-
-/* - - - - - - - - Projects - - - - - - - - */
-.project {
-  background-color: #E4E0E1;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
 }

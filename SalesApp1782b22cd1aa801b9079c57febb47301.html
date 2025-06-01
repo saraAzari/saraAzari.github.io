@@ -1,0 +1,712 @@
+<html>
+
+<script>
+  const accessCode = "7777"; // Change this to your desired code
+
+  function checkCode() {
+    let userCode = prompt("Enter access code:");
+    if (userCode !== accessCode) {
+      alert("Incorrect code! Access denied.");
+      window.location.href = "https://saraazari.com"; // Redirect on failure
+    }
+  }
+
+  checkCode();
+</script>
+
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Sales App</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 40vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1782b22c-d1aa-801b-9079-c57febb47301" class="page sans"><header><img class="page-cover-image" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/background.png" style="object-position:center 64.01%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✨</span></div><h1 class="page-title">Sales App</h1><p class="page-description"></p></header><div class="page-body"><p id="1782b22c-d1aa-80ce-8010-f989b455332f" class="">A Sales application designed and built specifically for the Beanfield Sales team</p><p id="1782b22c-d1aa-8183-9932-f51b654e0ed9" class="">
+</p><p id="1782b22c-d1aa-81af-8c42-fe9e8a6c9ced" class="">
+</p><h2 id="1782b22c-d1aa-814c-beac-d62317f95838" class="">🙋🏻‍♀️ My Role</h2><hr id="1782b22c-d1aa-81ea-b306-fb2ddf5ef430"/><p id="1782b22c-d1aa-8109-87c1-d50aa0493c84" class="">I have been the sole product designer working on this product, performing UX research, usability tests, UI, and interaction design. I was also acting product owner of this application for some time.</p><p id="1782b22c-d1aa-8083-9c44-dd462e36554d" class="">I started the discovery phase of this project in Jan 2021, this product has been maturing with new feature launches every sprint ever since.</p><p id="1782b22c-d1aa-80cf-88a5-c6738d3f86c1" class="">
+</p><h2 id="1782b22c-d1aa-81d5-b256-daa24c6a30e1" class="">📋 The Problem</h2><hr id="1782b22c-d1aa-8049-a9b8-e93d360c9af8"/><p id="80471992-034d-4891-9f86-f311a8d5ea55" class=""><strong>Context</strong></p><p id="1782b22c-d1aa-8086-81df-c108ae4442e4" class="">At Beanfield, we build most of the tools our employees in various departments use in house. Before the Sales App, the team had developed a sales tool that was used internally for over a decade. However, with the processes changing and the company growing, there was a need to upgrade the system.<br/><br/><br/></p><p id="9e29e801-3744-4850-a04d-38047ba577d5" class=""><strong>User Needs</strong></p><p id="1782b22c-d1aa-80bf-b382-c4c78765c5fc" class="">Sales people were confused about the state of their opportunities. Search feature was not usable, crucial information was missing or hard to find, duplicate leads were created daily, there was no way for the sales leader to track and forecast sales, the overall information architecture and UI design was difficult to navigate.</p><p id="1782b22c-d1aa-80ce-a1b6-f574375cc841" class=""><strong>Business Goals</strong></p><p id="1782b22c-d1aa-803d-af30-eea234aca25e" class="">I worked closely the VP of sales, CEO and COO along with sales leaders to understand the process they wanted the sales team to follow, and how the workflows and features of this product could help the sales team eliminate manual work so they have more time to bring more leads and make more sales.</p><p id="1782b22c-d1aa-80b4-9036-f9c99ede7a46" class="">
+</p><h2 id="1782b22c-d1aa-8059-90e8-e15f7db962e6" class="">📋 The Solution</h2><hr id="1782b22c-d1aa-8092-a149-fdca3b206b9a"/><p id="1782b22c-d1aa-802e-8c37-ce1a24f49a93" class=""><strong>Design Process</strong></p><ul id="1782b22c-d1aa-8034-ae5e-ec4bc341ab07" class="bulleted-list"><li style="list-style-type:disc">The first step of my user research was to sit down with a few sales rep with different experience levels and ask them questions about their daily work, interactions with the tools they use, their pain points and goals. I’d like to create personas for the users of my products to ensure everyone on the team is on the same page about who the users of our products are.<br/>persona image<br/></li></ul><ul id="1782b22c-d1aa-808f-b22a-d5ad5a4fc030" class="bulleted-list"><li style="list-style-type:disc">Next I’d like to watch the users performs some of the tasks that have come up, with the current state of the art they have access to. This helps me really understand where really the opportunities of imrpovement are</li></ul><ul id="1782b22c-d1aa-8081-8275-c679817a02da" class="bulleted-list"><li style="list-style-type:disc">Wire framing is a great tool to get some ideas down so I can share with them team what I think should be our immediate steps. I’d like to run some iterative sessions with my key stakeholders and a technical lead from my team, and go over some basic ideas, to ensure the focus sounds helpful to stakeholders, and the expectations in terms of technical achievements are appropriate.</li></ul><ul id="1782b22c-d1aa-804e-9ead-d633c89741b0" class="bulleted-list"><li style="list-style-type:disc">Once I have a good understanding of what to focus on for the the MVP, I define the scope of the project, and discuss it with stakeholders and my team.</li></ul><ul id="1782b22c-d1aa-80d6-8584-faf5902afab2" class="bulleted-list"><li style="list-style-type:disc">As soon as the scope of the MVP is defined, it’s time to start working on the nitty gritty interactions and high fid mockups. Of course the stakeholders are kept informed and consulted during this process.</li></ul><ul id="1782b22c-d1aa-8002-b6e7-f611e9a47523" class="bulleted-list"><li style="list-style-type:disc">Mockups are ready, so it’s time to make a real-life scenario prototype and test it with some users. I try to recruit users that have not been already consulted to make sure I get realistic results. During user testing, I look for qualitative data such as how the user reacts and whether they can intuitively understand the flow, and quantitative data like SUS scores, task completion time, and number of errors.</li></ul><p id="1782b22c-d1aa-806b-9480-f089ae6012e9" class=""><strong>Key Features</strong></p><ul id="17b2b22c-d1aa-8071-9322-f61471440598" class="bulleted-list"><li style="list-style-type:disc">New Design System<br/>I designed a new design system for internal products we built at Beanfield, called Hopscotch. The Hopscotch design system is inspired by and built on top of Vuetify’s implementation of Material Design.<br/></li></ul><figure id="17b2b22c-d1aa-80bf-bd35-ec2d3be914e8" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image.png"><img style="width:707.984375px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image.png"/></a></figure><ul id="17b2b22c-d1aa-80fb-9b90-d34a036d6b67" class="bulleted-list"><li style="list-style-type:disc">Opportunity Page<br/>The new and improved opportunity page helps the sales rep and their leader know what exactly is going on with each opportunity.<br/>The concise but clear opportunity card shows the sales rep, client’s name, the estimated value of the opportunity, the categories of the services on the opportunity, and the state of the opportunity. The previous tool didn’t have a good way showing this information clearly.<br/>Sales rep can add one or more quotes to the opportunity, each with a unique category and address combo. Quotes could have multiple package and term offerings for the customer to choose from. These delicate workflows were designed very carefully based on the feedback and experiences of sales reps and were thoroughly tested before the MVP version was approved.<br/>The communication card shows all the entire timeline of emails, comments, and potential forms for the customer. The sales app is integrated with our email system, allowing the reps to link email communication to the opportunities and activities of each client.<br/>Follow ups allow the sales reps and their managers to easily create to-do items and add due dates to ensure the follow up gets completed. There are notifications designed to ensure the sales reps won’t miss follow ups that are due soon or overdue<br/><br/></li></ul><figure id="17b2b22c-d1aa-80d5-94da-ef93038242da" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%201.png"><img style="width:2880px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%201.png"/></a></figure><ul id="17b2b22c-d1aa-8036-af81-c4e4eeaa5d81" class="bulleted-list"><li style="list-style-type:disc">Search and Advanced Search<br/>Live search allows the users to search for clients, opportunities, activities, and parent companies. For a more thorough search, users may hit enter to land on a search results page, showing all the search results matching the search term.<br/></li></ul><figure id="17b2b22c-d1aa-8098-99cc-f71843cd8da6" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%202.png"><img style="width:694px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%202.png"/></a></figure><p id="17b2b22c-d1aa-8018-bc23-e528ed98c9b3" class="">The advanced search allows users to do more detailed searches and save them as a report. Advanced searches can also be shared with others and added to the sales dashboard for easier access.<br/><br/></p><figure id="17b2b22c-d1aa-806c-affb-c6509059be2b" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%203.png"><img style="width:2880px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%203.png"/></a></figure><ul id="17b2b22c-d1aa-8016-a64a-f2abba68dd6f" class="bulleted-list"><li style="list-style-type:disc">Linked Accounts<br/>Sometimes we have more than one client account under the same holding umbrella, and the sales app allows to add this parent-child relationship, so we can get more accurate reporting in revenue<br/></li></ul><ul id="17b2b22c-d1aa-80bd-9daf-de1d3aabceeb" class="bulleted-list"><li style="list-style-type:disc">Meeting Tracking<br/>The sales app is fully integrated with google calendar, allowing the sales reps and their managers to track the meetings they’re having with clients. Meetings are a great indicator of how the sales process is going and how successful the sale will be<br/><br/></li></ul><figure id="17b2b22c-d1aa-8012-9b2a-d656f994b88b" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%204.png"><img style="width:707.984375px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%204.png"/></a></figure><ul id="17b2b22c-d1aa-8060-87fc-e018f4c7ab85" class="bulleted-list"><li style="list-style-type:disc">Sales Dashboard<br/>The dashboard was specifically designed to show important KPI at a glance, including quota, open opportunities, future forecast, meetings, monthly revenue, etc<br/><br/></li></ul><figure id="17b2b22c-d1aa-80c7-940b-c37ee6571344" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/dd79348b-eaaf-4981-9a40-e5efd4282008.png"><img style="width:159.6009975062344px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/dd79348b-eaaf-4981-9a40-e5efd4282008.png"/></a></figure><p id="17b2b22c-d1aa-8001-a62b-e7022fd7790e" class="">
+</p><ul id="17b2b22c-d1aa-804c-8e96-d3fe787731c4" class="bulleted-list"><li style="list-style-type:disc">Pricing Browser<br/>The pricing browser shows all the available products based on the address of the clients, so sales reps can quote customers accurately with just a click<br/><br/></li></ul><figure id="17b2b22c-d1aa-80e8-bdd0-e866a8a10ac8" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%205.png"><img style="width:707.9921875px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%205.png"/></a></figure><ul id="17b2b22c-d1aa-8072-94f9-f29ba269644c" class="bulleted-list"><li style="list-style-type:disc">Myquotes Page<br/>This page was designed to eliminate manual work for the sales reps communicating product offerings with customers. This page is created temporarily on a public URL, showing all the quotes added on the opportunity live, with timestamps. This makes back and forth between the sales rep and the client a breez.<br/><br/></li></ul><figure id="17b2b22c-d1aa-8034-af37-c2dd4422d297" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%206.png"><img style="width:2880px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%206.png"/></a></figure><p id="1782b22c-d1aa-80c0-b2fa-ed54034fe32f" class="">
+</p><h2 id="1782b22c-d1aa-805c-a6a2-d62f15ddb312" class="">📋 Design Decisions</h2><hr id="1782b22c-d1aa-8050-82fa-d054a5f8044f"/><p id="1782b22c-d1aa-800b-bda8-c04d057cc767" class=""><strong>Information Architecture:</strong> </p><ul id="1852b22c-d1aa-807f-a364-c46cee4db9cc" class="bulleted-list"><li style="list-style-type:disc">Once the user logs into the Sales App, they land on the Dashboard.<br/>There is a search field on the dashboard that allows the users to search for leads, customers, opportunities, etc. This is the  main workflow for most of the users of the sales app, so I made this live search field look prominent.<br/></li></ul><ul id="1852b22c-d1aa-8079-9804-dd09ff492725" class="bulleted-list"><li style="list-style-type:disc">The main navigation of the sales app is through the left navigation drawer. This navigation drawer follows our design system and is always accessible throughout the entire user experience.<br/>This navigation drawer has 2 levels of entries, since some of the pages required to have children pages. The navigation drawer opens when the user hovers over it and stays open as long as the cursor does not leave the drawer.<br/>When the navigation drawer is closed, the users only see the level one parent pages icons, and when the navigation drawer is open, the users will see which parent/child page is selected. They can also interact with the navigation drawer and see the names of all the pages, and navigate to them by clicking on the page name.<br/></li></ul><ul id="1852b22c-d1aa-80a6-a20e-e9998576af1f" class="bulleted-list"><li style="list-style-type:disc">Tabs are used throughout the application to separate data and categorize flows  that were related but did not need to be visible at the same time<br/>Settings Page<br/><br/>Dashboard Visualizations<br/><br/>Search results page <br/></li></ul><ul id="1852b22c-d1aa-8031-bbb5-c7d664e7532b" class="bulleted-list"><li style="list-style-type:disc">Breadcrumbs are also used strategically throughout the application to help the users understand where they are, and offer a route back to where the user came from<br/>I used the “Entity type: Entity” when needed to clarify further to the user what each breadcrumb entails<br/><br/></li></ul><figure id="1852b22c-d1aa-80ad-b954-cccda9f0f8e7" class="image"><a href="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%207.png"><img style="width:709.984375px" src="Sales%20App%201782b22cd1aa801b9079c57febb47301/image%207.png"/></a></figure><p id="1852b22c-d1aa-800a-8eba-cea0013fe693" class="">picture of information architecture screenshot</p><p id="1852b22c-d1aa-8075-a156-dfbad0b42e03" class="">
+</p><p id="1852b22c-d1aa-8068-b9b6-fbbc1145f667" class="">
+</p><p id="1782b22c-d1aa-8026-8773-e149ce4e5ade" class=""><strong>Visual Design:</strong> Most UI choices were made to follow the company’s design system which I created. When needed, we made additional components to tweaked the existing ones. The Hopscotch design system also covers everything accessibility related, including font size, color contract, clear tone of voice, etc.</p><p id="1782b22c-d1aa-80e7-acc0-dc2425e6fad3" class="">
+</p><h2 id="1782b22c-d1aa-801c-a657-ec0abc9e9dbd" class="">📋 <strong>Results and Reflections</strong></h2><hr id="1782b22c-d1aa-80ff-8e76-c610415250a7"/><ul id="1782b22c-d1aa-80da-bb73-d9fbcb30b8fb" class="bulleted-list"><li style="list-style-type:disc"><strong>Outcomes:</strong> If possible, share any measurable results (e.g., &quot;User testing showed a 20% increase in task completion efficiency&quot;).</li></ul><ul id="1782b22c-d1aa-8081-bb3d-e9c9a7509f58" class="bulleted-list"><li style="list-style-type:disc"><strong>Lessons Learned:</strong> <br/>Most of the challenges I faced during the design and development of the sales app was the value of clear and open communication with stakeholders. I worked with a small team of developers with limited number of resources. I learned how important it is to be clear about where we were in the process and trying to have a rough timeline is helpful for the stakeholders to manage their expectations. over communication is sometimes the best thing you can do as a product owner.<br/>Another lesson I learned was not getting attached to my designs. More often than not usability research shows that my initial ideas are not the final solution, and it’s okay to pivot.<br/></li></ul><ul id="1782b22c-d1aa-80e5-a0f3-f97ac4a1df13" class="bulleted-list"><li style="list-style-type:disc"><strong>Next Steps:</strong> I am currently working on the design phase of new features including Commission tracking and Order Submission Templates</li></ul><p id="1782b22c-d1aa-814f-ba7f-fb094a013b58" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body>
+</html>

@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html>
+
+<script>
+  const accessCode = "7777"; // Change this to your desired code
+
+  function checkCode() {
+    let userCode = prompt("Enter access code:");
+    if (userCode !== accessCode) {
+      alert("Incorrect code! Access denied.");
+      window.location.href = "https://saraazari.com"; // Redirect on failure
+    }
+  }
+
+  checkCode();
+</script>
+
+
 <head>
 	<title>Evergreen Design System</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Google font link was removed--> 
-	<!--css-->
- 	<link rel="stylesheet" type="text/css" href="main.css">
-</head>x
-<body>
-	<div class="navtop" id="myTopnav">
- 		<img src="images/logo.png" alt="personal logo" width="25%" style="text-align: left; margin-right: 40%;">
- 		<a href= "index.html" class="pink" alt="about" style="text-align: right;" >about</a>
- 		<a href="index.html#work" class="pink active" alt="work" style="text-align: right;">work</a>
- 		<a href="resume.html" class="pink" alt="resume" style="text-align: right;">resume</a>
- 		<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
- 	</div>  
 
- 	<div class="landing">
+	<!--css-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<!-- Google Icons -->
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+
+ </head>
+
+<body>
+	<!--NAV-->
+	<div class="containerfortop">
+		<img src="logo_purple.png" alt="personal logo" width="293px">
+		<div class="navtop" id="myTopnav">	
+ 			<a href= "about.html" class="navtop" alt="about" style="text-align: right;" >My Story</a>
+ 			<a href="#work" class="navtop" alt="work" style="text-align: right;">Work</a>
+ 			<a href="#contact" class="navtop" alt="work" style="text-align: right;">Contact</a>
+ 			<a href="resume.html" class="navtop" alt="resume" style="text-align: right;">Resume</a>
+ 		</div>
+ 	</div>
+ 	<br>
+
+
+ 	<div class="landing" style="margin-left: 6rem; margin-right: 6rem;">
  		<div class="landingWrapper">
  			<div class="landingL">
  				<h1>Evergreen design system</h1>
+ 				<br>
 
  				<p>When I started at PointClickCare designers had to constantly detach components from the sketch library we used back then so they can use components appropriately in our products. There were no guidelines in place, and interactions were not consistent across different products. Building a design system catered to specific needs of health care software users is more complicated than I ever imagined. I had the oppurtunity to work on both design guidelines and a component library in sketch along with other team members.</p> 
  			</div>
  			<div class="landingR">
- 				<img src="images/evergreenlogo.png" alt="evergreen logo" width="300px;" style="margin-top: 20px;" >
+ 				<img src="Evergreen/evergreenlogo.png" alt="evergreen logo" width="300px;" style="margin-top: 20px;" >
  			</div>
  		</div>
  		<!--<img src="images/Scroll.png" alt="scroll down" class="scroll">-->
  	</div>
 
- 	<div>
- 		<h2>Who are we designing for?</h2>
+ 	<div style="margin-left: 6rem; margin-right: 6rem;">
+ 		<h2 style="margin-left:0rem;">Who are we designing for?</h2>
  		<br>
  		<h4>Designers (that always have users in mind)</h4>
  		<p>This one needs no convincing for designers. But there are benefits a design system has for users</p>
@@ -55,7 +81,7 @@
 
  		<br><br>
 
- 		<h2>Selected components I worked on</h2>
+ 		<h2 style="margin-left:0rem;">Selected components I worked on</h2>
  		
  		<h4>Navigation drawers</h4>
  		<img src="Evergreen/menu collapsed update.png" alt="navigation drawer img" width="1000px;"> <br><br>
@@ -80,14 +106,15 @@
 
  </div>
  	<br><br>
- 	<div class="footer">
- 		<div>
- 			<a href= "index.html" class="pink link" alt="about">about</a>
- 			<a href="index.html#work" class="pink link" alt="work">work</a>
- 			<a href="resume.html" class="pink link" alt="resume">resume</a>
- 		</div>  
- 		<a href="mailto:sara.razari@gmail.com"><h4 class="pink">Contact me</h4></a>
- 		<div class="underlineSmall"></div>
+ 	<!-----CONTACT----->
+	<a id="contact"></a>
+	<h2>Contact Me</h2>
+	<div class="logocontainer" style="margin-left: 6rem;">
+ 		<a href="mailto:sara.razari@gmail.com">Email Me</a>
+ 		<a href="https://www.linkedin.com/in/sara-azari/">Linkedin</a>
+ 		<a href="https://github.com/saraAzari">Github</a>
+ 		<a href="https://dribbble.com/sara_azari">Dribble</a>
+ 		<br><br><br><br>
  	</div>
 
  	<script type="text/javascript" src="portfolio.js"></script>
